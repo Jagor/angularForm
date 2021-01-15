@@ -30,6 +30,7 @@ export class MultiselectComponent implements OnInit {
     {title: 'Сервис 1', name: 'service1', assignees: [
         {workgroup: 'qqq', assignee: 'Иванов'},
         {workgroup: 'qqq', assignee: 'Петров'},
+        {workgroup: 'qqq', assignee: 'Сидоров'},
       ]}
 
   serviceForm: FormGroup;

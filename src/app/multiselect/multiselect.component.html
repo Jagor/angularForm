@@ -17,11 +17,10 @@
 
 </form>
 <mat-divider></mat-divider>
-
-<div>
+<h4>Использование <code>ng-select</code> для отображения</h4>
+<div style="width: 300px">
   <ng-select [items]="assignees"
              bindLabel="assignee"
-             bindValue="assignee"
              [multiple]="true"
              [(ngModel)]="service.assignees">
   </ng-select>
