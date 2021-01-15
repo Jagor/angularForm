@@ -1,0 +1,18 @@
+<form [formGroup]="serviceForm">
+  <div>
+    <mat-form-field>
+      <input matInput [value]="service.title" formControlName="title" placeholder="Название">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-select multiple>
+        <mat-option
+          *ngFor="let assignee of assignees"
+          [value]="assignee.assignee"
+        >{{assignee.assignee}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</form>
+<mat-divider></mat-divider>
