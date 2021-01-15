@@ -14,7 +14,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
-
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,8 @@ import {MatDividerModule} from '@angular/material/divider';
     RouterModule,
     AppRoutingModule,
     MatSelectModule,
-    MatDividerModule
+    MatDividerModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

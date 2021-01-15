@@ -6,7 +6,7 @@
   </div>
   <div>
     <mat-form-field>
-      <mat-select multiple>
+      <mat-select multiple formControlName="assignees">
         <mat-option
           *ngFor="let assignee of assignees"
           [value]="assignee.assignee"
@@ -14,5 +14,15 @@
       </mat-select>
     </mat-form-field>
   </div>
+
 </form>
 <mat-divider></mat-divider>
+
+<div>
+  <ng-select [items]="assignees"
+             bindLabel="assignee"
+             bindValue="assignee"
+             [multiple]="true"
+             [(ngModel)]="service.assignees">
+  </ng-select>
+</div>
